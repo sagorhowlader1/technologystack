@@ -6,7 +6,9 @@ const Footer = () => {
 
       <div className="h-px bg-[#F1F5F9]"></div>
 
-      <div className="grid grid-cols-4 container mx-auto mt-15 mb-15">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 lg:gap-0 container mx-auto px-4 md:px-6 mt-15 mb-15"
+      >
         <div>
           <div>
             <a href="#">
@@ -33,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mx-10">
+        <div className="lg:mx-10">
           <h2 className="text-[#0F172A] font-bold pb-2">PRODUCT</h2>
           <ul className="text-[#64748B] text-xl">
             <li className="text-[#64748B] py-1">
@@ -76,17 +78,25 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="h-px container mx-auto bg-[#F1F5F9]"></div>
+      <div className="h-px bg-[#F1F5F9]"></div>
 
-      <div className="container mx-auto my-10">
-        <div className="flex flex-2 text-[#64748B] justify-between items-center text-center">
+
+      <div className="container mx-auto px-4 sm:px-6 mt-10 sm:mt-12 md:mt-15 mb-10 sm:mb-12 md:mb-15">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 text-[#64748B] text-sm sm:text-base text-center sm:text-left">
+
           <p>© 2026 Dev Stack. All rights reserved.</p>
-          <div className="flex  text-[#64748B] gap-6">
-            <p>Privacy</p>
-            <p>Terms</p>
+
+          <div className="flex items-center gap-5 sm:gap-6">
+            <p className="cursor-pointer hover:text-white transition-colors">
+              Privacy
+            </p>
+            <p className="cursor-pointer hover:text-white transition-colors">
+              Terms
+            </p>
           </div>
         </div>
       </div>
+
     </div>
   );
 };

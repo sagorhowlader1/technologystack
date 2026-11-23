@@ -65,9 +65,9 @@ const Technologies = ({technologiesPromise}: TechnologiesProps) =>{
         });
     };
     
-    return (<div className="container mx-auto">
+    return (<div className="container mx-auto px-4 md:px-6">
         <div className="mt-18">
-            <h2 className="font-extrabold text-4xl">Explore the <span className="bg-gradient-to-r from-[#EC4899]  to-[#7C3AED] bg-clip-text text-transparent ">Technologies</span></h2>
+            <h2 className="font-extrabold text-3xl sm:text-4xl">Explore the <span className="bg-gradient-to-r from-[#EC4899]  to-[#7C3AED] bg-clip-text text-transparent ">Technologies</span></h2>
             <p className="text-[#64748B] pb-7 pt-3">
                 Pick one technology per category to build your ideal stack.
             </p>
